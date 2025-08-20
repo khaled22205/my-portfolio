@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>Portfolio</div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="education.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievement</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu">
+                <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1 class="hero-name reveal">Khaled Hamada</h1>
+                    <h2 class="hero-title reveal">Web Developer</h2>
+                    <p class="hero-description reveal">I design and build full-stack web applications using .NET. From
+                        creating modern, responsive user interfaces to developing secure and scalable back-end systems,
+                        I deliver complete solutions that help businesses grow.</p>
+                    <div class="hero-cta">
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="contact.html" class="btn btn-ghost">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <img src="images/home.png" alt="Khaled Hamada">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Offered Services</h2>
+                <p class="section-subtitle">Be clear and concise about what you can do. Use keywords clients might
+                    search for.</p>
+                <div class="grid cols-3">
+                    <div class="card reveal">
+                        <h3 class="title">Website Design</h3>
+                        <p class="desc">Modern UI/UX, responsive layouts, and brand-aligned visuals.</p>
+                    </div>
+                    <div class="card reveal">
+                        <h3 class="title">Frontend Development</h3>
+                        <p class="desc">High-performance, accessible, SEO-friendly implementations.</p>
+                    </div>
+                    <div class="card reveal">
+                        <h3 class="title">Optimization & SEO</h3>
+                        <p class="desc">Performance audits, Core Web Vitals, and technical SEO.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcase your best work that directly targets your niche.</p>
+                <div class="grid cols-3">
+                    <a class="card reveal" href="projects.html">
+                        <span class="badge">Case Study</span>
+                        <h3 class="title">E-commerce Redesign</h3>
+                        <p class="desc">Improved conversion by 34% through UX overhaul and performance tweaks.</p>
+                    </a>
+                    <a class="card reveal" href="projects.html">
+                        <span class="badge">Web App</span>
+                        <h3 class="title">Analytics Dashboard</h3>
+                        <p class="desc">Interactive charts, dark mode, and real-time data sync.</p>
+                    </a>
+                    <a class="card reveal" href="projects.html">
+                        <span class="badge">Landing</span>
+                        <h3 class="title">SaaS Landing Page</h3>
+                        <p class="desc">Clear messaging and fast load time for higher sign-ups.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section small">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="slider reveal">
+                    <div class="slides">
+                        <div class="slide">
+                            <p>“Amazing to work with! Delivered on time and beyond expectations.”</p>
+                            <p class="mt-16">— Happy Client</p>
+                        </div>
+                        <div class="slide">
+                            <p>“Great communication and excellent technical skills.”</p>
+                            <p class="mt-16">— Startup Founder</p>
+                        </div>
+                        <div class="slide">
+                            <p>“Our traffic and conversions improved significantly.”</p>
+                            <p class="mt-16">— Marketing Lead</p>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="dot active" aria-label="Slide 1"></button>
+                        <button class="dot" aria-label="Slide 2"></button>
+                        <button class="dot" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container cta reveal">
+                <h3 class="mt-0">Let's build something great</h3>
+                <p class="mb-16">Ready to start your project? Get in touch and let's make it happen.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Khaled Hamada</div>
+            <div><a href="mailto:you@example.com">khaled.hamada245@gmail.com</a></div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

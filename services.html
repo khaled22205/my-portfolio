@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>Portfolio</div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="education.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievement</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu">
+                <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Offered Services</h1>
+
+                <div class="grid cols-3 mt-24">
+                    <div class="card reveal">
+                        <span class="badge">Build</span>
+                        <h3 class="title">Full-Stack Web Applications</h3>
+                        <p class="desc">Scalable, secure, and user-friendly web applications with both front-end and
+                            back-end covered.</p>
+                        <ul class="list mt-16">
+                            <li class="list-item">.NET Core / Node.js + Express</li>
+                            <li class="list-item">Angular</li>
+                            <li class="list-item">RESTful APIs integration</li>
+                        </ul>
+                    </div>
+                    <div class="card reveal">
+                        <span class="badge">Design</span>
+                        <h3 class="title">Database Design & Development</h3>
+                        <p class="desc">Reliable and optimized databases that ensure data consistency and performance.
+                        </p>
+                        <ul class="list mt-16">
+                            <li class="list-item">SQL Server</li>
+                            <li class="list-item">MongoDB</li>
+                            <li class="list-item">Data modeling & optimization</li>
+                        </ul>
+                    </div>
+                    <div class="card reveal">
+                        <span class="badge">Grow</span>
+                        <h3 class="title">Authentication & Role-Based Systems</h3>
+                        <p class="desc">Secure systems with user authentication, authorization, and role management.</p>
+                        <ul class="list mt-16">
+                            <li class="list-item">JWT & OAuth implementation</li>
+                            <li class="list-item">Identity & Access Control</li>
+                            <li class="list-item">Scalable security best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Khaled Hamada</div>
+            <div><a href="mailto:you@example.com">khaled.hamada245@gmail.com</a></div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

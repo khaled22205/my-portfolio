@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skills — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>Portfolio</div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="education.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievement</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu">
+                <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="skills-section">
+            <div class="container">
+                <h1 class="section-title">Skills & Expertise</h1>
+                <p class="section-subtitle">My technical skills and tools I use to bring ideas to life</p>
+
+                <div class="skills-container">
+                    <!-- Programming Languages -->
+                    <div class="skill-category reveal">
+                        <h2 class="category-title">Languages</h2>
+                        <div class="skills-grid">
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">C#</div>
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">TypeScript</div>
+                            <div class="skill-tag">HTML</div>
+                            <div class="skill-tag">CSS</div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Libraries -->
+                    <div class="skill-category reveal">
+                        <h2 class="category-title">Frameworks & Libraries</h2>
+                        <div class="skills-grid">
+                            <div class="skill-tag">.NET Core</div>
+                            <div class="skill-tag">ASP.NET MVC</div>
+                            <div class="skill-tag">Web API</div>
+                            <div class="skill-tag">Angular</div>
+                            <div class="skill-tag">Express.js</div>
+                            <div class="skill-tag">Node.js</div>
+                            <div class="skill-tag">LINQ</div>
+                            <div class="skill-tag">Entity Framework</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category reveal">
+                        <h2 class="category-title">Tools</h2>
+                        <div class="skills-grid">
+                            <div class="skill-tag">Git</div>
+                            <div class="skill-tag">GitHub</div>
+                            <div class="skill-tag">Visual Studio</div>
+                            <div class="skill-tag">VS Code</div>
+                            <div class="skill-tag">Postman</div>
+                            <div class="skill-tag">Figma</div>
+                            <div class="skill-tag">Docker</div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category reveal">
+                        <h2 class="category-title">Databases</h2>
+                        <div class="skills-grid">
+                            <div class="skill-tag">SQL Server</div>
+                            <div class="skill-tag">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Khaled Hamada</div>
+            <div><a href="mailto:you@example.com">khaled.hamada245@gmail.com</a></div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

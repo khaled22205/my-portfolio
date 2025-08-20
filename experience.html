@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Experience — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>Portfolio</div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="education.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievement</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu">
+                <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Work Experience</h1>
+
+                <div class="timeline mt-24">
+                    <div class="timeline-item reveal">
+                        <h3 class="mt-0 mb-0">Full-Stack Developer – Google</h3>
+                        <p class="mt-0 mb-0">2024 — 2025</p>
+                        <p class="mt-16">Designed and implemented end-to-end web solutions with a focus on
+                            high-performance APIs and user-friendly interfaces. Improved code efficiency and reduced
+                            system latency by applying optimized algorithms and best practices</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <h3 class="mt-0 mb-0">Backend Developer – Meta </h3>
+                        <p class="mt-0 mb-0">2022 — 2023</p>
+                        <p class="mt-16">Developed robust back-end services supporting millions of users. Worked on
+                            authentication, authorization, and security layers to ensure data protection. Collaborated
+                            in Agile teams, enhancing product features while maintaining scalability and stability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Khaled Hamada</div>
+            <div><a href="mailto:you@example.com">khaled.hamada245@gmail.com</a></div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

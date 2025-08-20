@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Achievements — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="brand">
+                <div class="logo"></div>
+                <div>Portfolio</div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="education.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="experience.html">Experience</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="achievements.html">Achievement</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="menu-btn" aria-label="Menu">
+                <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Achievements</h1>
+                <p class="section-subtitle">Awards, recognitions, and publications for social proof.</p>
+
+                <div class="card reveal">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Organization</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Top Performer Award</td>
+                                <td>Company A</td>
+                                <td>2024</td>
+                            </tr>
+                            <tr>
+                                <td>Best Landing Design</td>
+                                <td>Design Conference</td>
+                                <td>2023</td>
+                            </tr>
+                            <tr>
+                                <td>Published Article: Web Performance</td>
+                                <td>Tech Blog</td>
+                                <td>2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> Your Name</div>
+            <div><a href="mailto:you@example.com">you@example.com</a></div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
