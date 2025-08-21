@@ -132,4 +132,62 @@ document.addEventListener('DOMContentLoaded', function () {
             card.style.transform = 'translateY(0) rotateY(0deg)';
         });
     });
+
+    // Image Gallery functionality
+    const galleries = document.querySelectorAll('.project-gallery');
+    galleries.forEach((gallery) => {
+        const mainImg = gallery.querySelector('.gallery-main-img');
+        const thumbnails = gallery.querySelectorAll('.gallery-thumbnail');
+        const prevBtn = gallery.querySelector('.gallery-nav.prev');
+        const nextBtn = gallery.querySelector('.gallery-nav.next');
+        const counter = gallery.querySelector('.gallery-counter');
+        
+        if (!mainImg || thumbnails.length === 0) return;
+        
+        let currentIndex = 0;
+        const images = Array.from(thumbnails).map(thumb => ({
+            src: thumb.src,
+            alt: thumb.alt
+        }));
+        
+        const updateGallery = (index) => {
+            currentIndex = index;
+            mainImg.src = images[currentIndex].src;
+            mainImg.alt = images[currentIndex].alt;
+            
+            thumbnails.forEach((thumb, i) => {
+                thumb.classList.toggle('active', i === currentIndex);
+            });
+            
+            if (counter) {
+                counter.textContent = `${currentIndex + 1} / ${images.length}`;
+            }
+        };
+        
+        const nextImage = () => {
+            updateGallery((currentIndex + 1) % images.length);
+        };
+        
+        const prevImage = () => {
+            updateGallery((currentIndex - 1 + images.length) % images.length);
+        };
+        
+        // Thumbnail clicks
+        thumbnails.forEach((thumb, index) => {
+            thumb.addEventListener('click', () => updateGallery(index));
+        });
+        
+        // Navigation buttons
+        if (nextBtn) nextBtn.addEventListener('click', nextImage);
+        if (prevBtn) prevBtn.addEventListener('click', prevImage);
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
+        });
+        
+        // Initialize gallery
+        updateGallery(0);
+    });
 });
